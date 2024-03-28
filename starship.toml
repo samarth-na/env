@@ -16,6 +16,7 @@ $c\
 $rust\
 $golang\
 $nodejs\
+$lua\
 $php\
 $java\
 $kotlin\
@@ -25,6 +26,8 @@ $python\
 $docker_context\
 [](fg:blue bg:purple)\
 $time\
+[|](fg:black bg:purple)\
+$cmd_duration\
 [ ](fg:purple)\
 $line_break$character"""
 
@@ -185,18 +188,18 @@ format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
 [lua]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version)](fg:base bg:teal)]($style)'
 
 [time]
-disabled = true
+disabled = false
 time_format = "%R"
 style = "bg:peach"
-format = '[[  $time ](fg:mantle bg:purple)]($style)'
+format = '[[ $time ](fg:mantle bg:purple)]($style)'
 
 [cmd_duration]
 disabled = false
-min_time = 500
-format = "took [$duration](bold yellow)" # Customize the display format
+min_time = 1
+format = "[[ $duration ](fg:mantle bg:purple)]($style)" # Customize the display format
 
 [line_break]
 disabled = false
