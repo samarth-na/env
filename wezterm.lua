@@ -9,7 +9,7 @@ local config = {
 	window_padding = { left = 0, right = 0, top = 3, bottom = 0 },
 	force_reverse_video_cursor = true,
 	foreground_text_hsb = {
-		-- hue = 1.0,
+		hue = 1.0,
 		saturation = 1.05,
 		brightness = 1.05,
 	},
