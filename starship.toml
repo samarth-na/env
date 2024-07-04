@@ -109,11 +109,12 @@ truncation_length = 0
 truncation_symbol = "…/"
 
 [directory.substitutions]
-# "Documents" = "󰈙 "
-# "Downloads" = " "
-# "Music" = "󰝚 "
-# "Pictures" = " "
-# "Developer" = "󰲋 "
+ "Documents" = "󰈙 "
+ "Downloads" = " "
+ "Music" = "󰝚 "
+ "Pictures" = " "
+ "Developer" = "󰲋 "
+ ".config" = " "
 
 [git_branch]
 symbol = " "
@@ -143,7 +144,7 @@ style = "bg:teal"
 format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [golang]
-symbol = " "
+symbol = ""
 style = "bg:teal"
 format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 detect_files = [
